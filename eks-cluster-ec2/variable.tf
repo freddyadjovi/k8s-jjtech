@@ -3,11 +3,11 @@ variable "cluster_name" {
 }
 
 variable "cluster_version" {
-  default = "1.25"
+  default = "1.27"
 }
 
 variable "region" {
-  default = "us-east-1"
+  default = "us-east-2"
 }
 
 variable "ingress_ports" {

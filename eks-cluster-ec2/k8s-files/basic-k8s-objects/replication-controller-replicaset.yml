@@ -52,4 +52,3 @@ spec:
         - name: NGX_VERSION
           value: 1.16.1
         
-

@@ -51,8 +51,8 @@ resource "aws_eks_fargate_profile" "alb-controller" {
   # These subnets must have the following resource tag: 
   # kubernetes.io/cluster/<CLUSTER_NAME>.
   subnet_ids = [
-    aws_subnet.private-us-east-1a.id,
-    aws_subnet.private-us-east-1b.id
+    aws_subnet.private-us-east-2a.id,
+    aws_subnet.private-us-east-2b.id
   ]
 
   selector {
@@ -99,7 +99,7 @@ resource "helm_release" "aws-load-balancer-controller" {
   # EKS Fargate specific
   set {
     name  = "region"
-    value = "us-east-1"
+    value = "us-east-2"
   }
 
   set {
