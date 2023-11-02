@@ -17,7 +17,3 @@ spec:
           image: nginx
           ports:
             - containerPort: 8080
-      nodeSelector: 
-        node: host # key-value used to label nodes
-
-# # kubectl label nodes node_name key=value
